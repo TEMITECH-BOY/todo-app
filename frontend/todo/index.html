@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <script src="app.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-8">
+  <div class="max-w-xl mx-auto bg-white rounded-xl shadow-md p-6">
+    <h1 class="text-2xl font-bold mb-4 text-center">📝 My Todo App</h1>
+    
+    <form class="space-y-4">
+      <input type="text" id="title" placeholder="Title" class="w-full p-2 border border-gray-300 rounded" />
+      <textarea id="description" placeholder="Description" class="w-full p-2 border border-gray-300 rounded"></textarea>
+      <button id="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full">Add Task</button>
+    </form>
+
+    <ul id="display" class="mt-6 space-y-4"></ul>
+  </div>
+</body>
+</html>
